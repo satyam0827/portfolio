@@ -123,11 +123,12 @@ html {
   transition: all 0.5s;
   margin-left: 20px;
   font-size: 16px;
+  cursor: pointer;
+  
 }
 
 #about--section .main--div .bio--div .cv--btn:hover {
   background-color: orange;
-  cursor: pointer;
 }
 
 #about--section .main--div .services--div {
