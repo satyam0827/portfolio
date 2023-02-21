@@ -67,7 +67,7 @@ html {
   padding-top: 100px;
   height: 60vh;
   color: white;
-  background: url(images/guru2.jpg) rgba(0, 0, 0, 0.2);
+  background: url(images/guru2.jpg) rgba(0, 0, 0, 0.3);
   background-size: 100% 80%;
   background-blend-mode: darken;
   background-repeat: no-repeat;
@@ -111,9 +111,27 @@ html {
   width: 250px;
 }
 
+#about--section .main--div .bio--div .cv--btn {
+  width: 150px;
+  background-color: transparent;
+  border: 2px orange solid;
+  color: white;
+  padding: 20px;
+  font-weight: 700;
+  margin-top: 20px;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  margin-left: 20px;
+  font-size: 16px;
+}
+
+#about--section .main--div .bio--div .cv--btn:hover {
+  background-color: orange;
+  cursor: pointer;
+}
+
 #about--section .main--div .services--div {
   padding: 20px;
-  z-index: 1;
 }
 
 #about--section .main--div .services--div h5 {
