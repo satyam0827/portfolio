@@ -68,7 +68,7 @@ html {
   height: 60vh;
   color: white;
   background: url(images/guru2.jpg) rgba(0, 0, 0, 0.4);
-  background-size: 100% 100%;
+  background-size: 100% 80%;
   background-blend-mode: darken;
   background-repeat: no-repeat;
   background-attachment: fixed;
