@@ -1,0 +1,317 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,300;0,500;0,600;0,700;1,300&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Barlow Condensed', sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+  -webkit-animation: all ease-out 0.5s;
+          animation: all ease-out 0.5s;
+}
+
+.nav--bar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  color: white;
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  background: #363543;
+  width: 100%;
+  z-index: 2;
+}
+
+.nav--bar h3 {
+  padding: 0px 40px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: inherit;
+}
+
+.nav--bar .nav--list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.nav--bar .nav--list li {
+  list-style: none;
+  -webkit-transition: all  0.5s;
+  transition: all  0.5s;
+}
+
+.nav--bar .nav--list li a {
+  text-decoration: none;
+  color: white;
+  padding: 20px 30px;
+  display: inline-block;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.nav--bar .nav--list :hover {
+  background-color: darkgray;
+  color: black;
+}
+
+#about--section {
+  padding-top: 100px;
+  height: 60vh;
+  color: white;
+  background: url(images/guru2.jpg) rgba(0, 0, 0, 0.4);
+  background-size: 100% 100%;
+  background-blend-mode: darken;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+#about--section .main--div {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 10fr 5fr;
+      grid-template-columns: 10fr 5fr;
+  width: 94%;
+  padding: 0px 20px;
+  gap: 20rem;
+  height: 50vh;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+#about--section .main--div .bio--div {
+  padding: 20px;
+}
+
+#about--section .main--div .bio--div .im {
+  font-size: 40px;
+  color: #878696;
+}
+
+#about--section .main--div .bio--div .sec1--name {
+  font-size: 60px;
+}
+
+#about--section .main--div .bio--div .border--div {
+  background-color: orange;
+  height: 5px;
+  width: 200px;
+  margin-top: 12px;
+}
+
+#about--section .main--div .bio--div p {
+  width: 250px;
+}
+
+#about--section .main--div .services--div {
+  padding: 20px;
+  z-index: 1;
+}
+
+#about--section .main--div .services--div h5 {
+  font-size: 20px;
+}
+
+#about--section .main--div .services--div p {
+  margin: 5px 0px 25px 0px;
+  padding: 0;
+}
+
+#about--section .main--div .services--div a {
+  text-align: left;
+  color: orange;
+  text-decoration: none;
+}
+
+#about--section .main--div .services--div a i {
+  padding-left: 10px;
+}
+
+#about--section .main--div .services--div .icon--container {
+  height: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#about--section .main--div .services--div .icon--container i {
+  font-size: 21px;
+  padding: 10px;
+  -webkit-transition: all ease-out 0.5s;
+  transition: all ease-out 0.5s;
+  background-color: #464857;
+  border-radius: 50%;
+  color: orange;
+  margin-right: 15px;
+}
+
+#about--section .main--div .services--div .icon--container :hover {
+  -webkit-transform: rotate(360deg) scale(1.12);
+          transform: rotate(360deg) scale(1.12);
+  cursor: pointer;
+  color: white;
+}
+
+#about--section .main--div p {
+  padding: 5px;
+  text-align: justify;
+  font-size: 20px;
+  font-weight: 350;
+}
+
+#about--section .image--div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: absolute;
+  bottom: 160px;
+  width: 100%;
+}
+
+#about--section .image--div img {
+  width: 20%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  -webkit-box-shadow: -2px -2px  7px black;
+          box-shadow: -2px -2px  7px black;
+}
+
+#about--section .image--div .google--section {
+  width: 70%;
+  height: 90px;
+  background-color: #464857;
+  margin-left: auto;
+  margin-right: auto;
+  -webkit-box-shadow: -2px -2px 20px -8px black;
+          box-shadow: -2px -2px 20px -8px black;
+}
+
+#project--section {
+  padding: 60px 10px 10px 10px;
+  background-color: darkgray;
+}
+
+#project--section .project--header {
+  text-align: center;
+  font-size: 30px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  border-bottom: 2px solid yellow;
+}
+
+#project--section .cards {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: (minmax(50px, 1fr))[4];
+      grid-template-rows: repeat(4, minmax(50px, 1fr));
+  grid-gap: 20px;
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#project--section .cards .card {
+  padding: 20px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 6fr 1fr;
+      grid-template-columns: 6fr 1fr;
+  background-color: #2e2b2b;
+  border-radius: 10px;
+  text-align: center;
+  text-decoration: none;
+  gap: 20px;
+  color: white;
+  font-size: 16px;
+  -webkit-transition: all ease-in-out 0.5s;
+  transition: all ease-in-out 0.5s;
+  -webkit-box-shadow: -3px 3px 10px 0px black;
+          box-shadow: -3px 3px 10px 0px black;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#project--section .cards .card img {
+  width: 100%;
+  height: auto;
+  -webkit-box-shadow: -2px -2px 10px black;
+          box-shadow: -2px -2px 10px black;
+}
+
+#project--section .cards .card:hover {
+  -webkit-transform: scale(1.02);
+          transform: scale(1.02);
+}
+
+#contact--section {
+  height: 100vh;
+  background-color: #222221;
+  padding: 100px 0px 0px 20px;
+  color: white;
+}
+
+#contact--section .forms {
+  padding: 30px;
+  display: -ms-grid;
+  display: grid;
+}
+
+#contact--section .forms input {
+  border: none;
+  height: 20px;
+  padding: 10px;
+  border-radius: 6px;
+  margin: 10px 0px;
+}
+
+#contact--section .forms textarea {
+  padding: 20px;
+  margin-top: 10px;
+}
+
+#contact--section .forms #mob--no {
+  margin-bottom: 20px;
+}
+
+#contact--section .forms .submit--btn {
+  font-size: large;
+  padding: 0px 20px;
+  height: 50px;
+  font-weight: 600;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  background-color: #3b5998;
+  color: white;
+}
+
+#contact--section .forms .submit--btn:hover {
+  cursor: pointer;
+  background-color: white;
+  color: black;
+}
+
+.footer--section {
+  background-color: darkcyan;
+  color: white;
+}
+/*# sourceMappingURL=style.css.map */
