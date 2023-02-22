@@ -67,7 +67,7 @@ html {
   padding-top: 100px;
   height: 60vh;
   color: white;
-  background: url(images/guru2.jpg) rgba(0, 0, 0, 0.3);
+  background: url(images/guru2.jpg);
   background-size: 100% 80%;
   background-blend-mode: darken;
   background-repeat: no-repeat;
@@ -132,6 +132,7 @@ html {
 
 #about--section .main--div .services--div {
   padding: 20px;
+  z-index: 1;
 }
 
 #about--section .main--div .services--div h5 {
